@@ -1,6 +1,6 @@
 .soa-nav {
 	z-index: 3;
-	background-color: #fff;
+	background-color: #f6f6f6;
 	display: none;
 	position: absolute;
 	width: 100%;
@@ -17,7 +17,8 @@
 
 	a {
 		display: block;
-		color: #a93c96;
+		// color: #a93c96;
+		color: #4a2e83;
 		text-decoration: none;
 	}
 }
@@ -47,11 +48,11 @@
 	font-family: 'Karla-Bold';
 
 	&:last-child {
-		border-bottom: 1px solid #ddd;
+		border-bottom: 1px solid #fff;
 	}
 
 	>li {
-		border-top: 1px solid #ddd;
+		border-top: 1px solid #fff;
 		padding-left: $margin-small;
 	}
 }
@@ -59,10 +60,10 @@
 .nav-level-2 {
 	text-transform: capitalize;
 	font-family: 'Karla-Bold';
-	background-color: #fff;
+	// background-color: #f3f3f3;
 
 	>li {
-		border-top: 1px solid #eee;
+		border-top: 1px solid #fff;
 		margin-left: 30px;
 		padding-left: 10px;
 	}
@@ -71,7 +72,7 @@
 ul .nav-level-3 {
 	text-transform: capitalize;
 	font-family: 'Karla-Regular';
-	background-color: #fff;
+	// background-color: #f3f3f3;
 	padding-bottom: 6px;
 
 	>li {
@@ -116,7 +117,8 @@ ul .nav-level-3 {
 		}
 
 		a:hover {
-			color: #a93c96;
+			// color: #a93c96;
+			color: #4a2e83;
 		}
 	}
 
@@ -147,6 +149,7 @@ ul .nav-level-3 {
 		padding-top: 2px;
 		padding-bottom: 8px;
 		z-index: 4;
+		background-color: #fff;
 
 		a:hover {
 			text-decoration: underline;
@@ -167,6 +170,7 @@ ul .nav-level-3 {
 		top: -4px;
 		padding-top: 4px;
 		padding-bottom: 4px;
+		background-color: #fff;
 		
 		a:hover {
 			text-decoration: underline;

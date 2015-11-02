@@ -99,7 +99,7 @@ ul.header-nav {
 
 .soa-nav {
   z-index: 3;
-  background-color: #fff;
+  background-color: #f6f6f6;
   display: none;
   position: absolute;
   width: 100%;
@@ -112,7 +112,7 @@ ul.header-nav {
     line-height: 2.5; }
   .soa-nav a {
     display: block;
-    color: #a93c96;
+    color: #4a2e83;
     text-decoration: none; }
 
 .nav-parent::after {
@@ -131,24 +131,22 @@ ul.header-nav {
   text-transform: uppercase;
   font-family: 'Karla-Bold'; }
   .nav-level-1:last-child {
-    border-bottom: 1px solid #ddd; }
+    border-bottom: 1px solid #fff; }
   .nav-level-1 > li {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #fff;
     padding-left: 10px; }
 
 .nav-level-2 {
   text-transform: capitalize;
-  font-family: 'Karla-Bold';
-  background-color: #fff; }
+  font-family: 'Karla-Bold'; }
   .nav-level-2 > li {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #fff;
     margin-left: 30px;
     padding-left: 10px; }
 
 ul .nav-level-3 {
   text-transform: capitalize;
   font-family: 'Karla-Regular';
-  background-color: #fff;
   padding-bottom: 6px; }
   ul .nav-level-3 > li {
     margin-left: 40px; }
@@ -177,7 +175,7 @@ ul .nav-level-3 {
     .soa-nav a {
       color: #000; }
     .soa-nav a:hover {
-      color: #a93c96; }
+      color: #4a2e83; }
 
   .nav-level-1 {
     text-transform: none;
@@ -198,7 +196,8 @@ ul .nav-level-3 {
     width: calc(475px / 3);
     padding-top: 2px;
     padding-bottom: 8px;
-    z-index: 4; }
+    z-index: 4;
+    background-color: #fff; }
     ul .nav-level-2 a:hover {
       text-decoration: underline; }
     ul .nav-level-2 li {
@@ -213,7 +212,8 @@ ul .nav-level-3 {
     left: calc((475px / 3) + 4px);
     top: -4px;
     padding-top: 4px;
-    padding-bottom: 4px; }
+    padding-bottom: 4px;
+    background-color: #fff; }
     ul .nav-level-3 a:hover {
       text-decoration: underline;
       margin-left: 0x; }
