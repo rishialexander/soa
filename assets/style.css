@@ -164,7 +164,7 @@ ul .nav-level-3 {
       color: #a93c96; }
 
   .nav-level-1 {
-    text-transform: unset;
+    text-transform: none;
     font-family: 'Karla-Regular'; }
     .nav-level-1:last-child {
       border: none; }

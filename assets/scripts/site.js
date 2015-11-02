@@ -56,8 +56,8 @@ $( document ).ready(function() {
 	//Ensure that the main hides/shows properly when resizing window
 	//and resets the hamburger icon.
 	$(window).resize(function(){
-   	// var windowWidth = $(window).width();
-   	var windowWidth = viewport().width;
+   	var windowWidth = $(window).width();
+   	// var windowWidth = viewport().width;
 
 		if(windowWidth > 800){
 			$( '.soa-nav' ).show();
@@ -72,14 +72,14 @@ $( document ).ready(function() {
 		}
 	});
 
-	function viewport() {
-		var e = window, a = 'inner';
-		if (!('innerWidth' in window )) {
-	   	a = 'client';
-	   	e = document.documentElement || document.body;
-		}
-		return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
-	}
+	// function viewport() {
+	// 	var e = window, a = 'inner';
+	// 	if (!('innerWidth' in window )) {
+	//    	a = 'client';
+	//    	e = document.documentElement || document.body;
+	// 	}
+	// 	return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+	// }
 
 });
 
