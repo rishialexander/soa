@@ -17,7 +17,7 @@
 		margin-right: 8px;
 		float: left;
 		width: calc(100% - #{$margin-medium} - 8px - #{$inner-sidebar-width-small});
-		max-width: 700px;
+		max-width: 670px;
 		padding: 0 20px 12px;
 	}
 	
@@ -29,6 +29,7 @@
 
 	@media (min-width: 1000px) {
 		width: calc(100% - #{$margin-large} - 8px - #{$inner-sidebar-width-large});
+		padding: 0 60px 12px;
 	}
 
 	@media (min-width: 1000px) {
@@ -52,6 +53,10 @@
 
 	@media (min-width: 800px) {
 		width: calc(100% + 40px);
+	}
+
+	@media (min-width: 1000px) {
+		width: calc(100% + 60px);
 	}
 
 	a {
@@ -108,6 +113,7 @@
 	}
 
 	@media (min-width: 1000px) {
+		padding: 10px 40px 20px;
 		width: $inner-sidebar-width-large;
 	}
 }
@@ -140,5 +146,6 @@
 
 	@media (min-width: 1000px) {
 		width: $inner-sidebar-width-large;
+		padding: 30px 40px 8px;
 	}
 }
