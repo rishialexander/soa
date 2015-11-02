@@ -64,6 +64,22 @@ header {
     .uw-logo {
       left: 73px; } }
 
+ul.header-nav {
+  display: none; }
+  @media (min-width: 930px) {
+    ul.header-nav {
+      display: block;
+      padding: 0;
+      margin: 0;
+      color: #999;
+      position: absolute;
+      right: 22px;
+      top: 20px; }
+      ul.header-nav li {
+        display: inline; }
+      ul.header-nav a {
+        color: #999; } }
+
 .hamburger {
   width: 50px;
   height: 50px;

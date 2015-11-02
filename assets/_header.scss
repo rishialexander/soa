@@ -26,6 +26,29 @@ header {
 
 }
 
+ul.header-nav {
+	display: none;
+
+	@media (min-width: 930px) {
+		display: block;
+		padding: 0;
+		margin: 0;
+		color: #999;
+		position: absolute;
+		right: 22px;
+		top: 20px;
+
+		li {
+			display: inline;
+		}
+
+		a {
+			color: #999;
+		}	
+	}
+
+}
+
 .hamburger {
 	width: $header-height-small;
 	height: $header-height-small;
