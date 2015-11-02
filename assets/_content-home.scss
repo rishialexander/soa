@@ -1,0 +1,105 @@
+.home-content {
+	position: relative;
+	z-index: 2;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	margin-top: calc(100vh - #{$home-peek});
+	background-color: #fff;
+	padding: 80px $margin-small 0;
+	
+	@media (min-width: 600px) {
+		padding: 0 $margin-medium;
+	}
+	
+	@media (min-width: 800px) {
+		padding: 0 $margin-large;
+	}
+}
+
+.features {
+	position: absolute;
+	top: 35px;
+	left: $margin-small;
+	color: #4b2e83;
+	font-size: 20px;
+	font-family: 'Karla-Bold';
+
+	@media (min-width: 600px) {
+		left: $margin-medium;
+	}
+	
+	@media (min-width: 800px) {
+		left: $margin-large;
+	}
+}
+
+.article-container {
+	margin-bottom: 0;
+	margin-top: 30px;
+
+	@media (min-width: 600px) {
+		padding: 80px 0 60px;
+		margin-bottom: 30px;
+	}
+
+	@media (min-width: 600px) {
+		width: calc((100% / 3) - 4%);
+	}
+
+	@media (min-width: 1600px) {
+		width: calc((100% / 5) - 4%);			
+	}
+	
+	article {
+
+		img {
+			width: 100%;
+		}
+
+		h3 {
+			margin: 16px 0 4px;
+
+			a {
+				text-decoration: none;
+				border-bottom: 1px solid #d9d9d9;
+
+				&:hover {
+					border-bottom: 1px solid #a93c96;
+				}
+			}
+		}
+
+		p {
+			line-height: 1.4;
+		}
+	}
+}
+
+.article-1, .article-2, .article-3 {
+	display: block;
+}
+
+.article-4, .article-5, .article-6 {
+	display: none;
+}
+
+@media (min-width: 600px) {
+	.article-1, .article-2, .article-3 {
+		display: block;
+	}
+	.article-4, .article-5, .article-6 {
+		display: none;
+	}
+}
+
+@media (min-width: 1600px) {
+	.article-1, .article-2, .article-3, .article-4, .article-5 {
+		display: block;
+	}
+	.article-6 {
+		display: none;
+	}					
+}

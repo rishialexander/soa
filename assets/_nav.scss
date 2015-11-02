@@ -1,0 +1,182 @@
+.soa-nav {
+	z-index: 3;
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	width: 100%;
+	padding-bottom: 8px;
+	
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+		line-height: 2.5;
+	}
+
+	a {
+		display: block;
+		color: #a93c96;
+		text-decoration: none;
+	}
+}
+
+.nav-parent {
+	&::after {
+		content: ' +';
+	}
+}	
+
+.activated {
+	&::after {
+		content: ' -';
+	}		
+}
+
+.hovered {
+	background-color: #fff;
+}
+
+.nav-child {
+	display: none;
+}
+
+.nav-level-1 {
+	text-transform: uppercase;
+	font-family: 'Karla-Bold';
+
+	&:last-child {
+		border-bottom: 1px solid #ddd;
+	}
+
+	>li {
+		border-top: 1px solid #ddd;
+		padding-left: $margin-small;
+	}
+}
+
+.nav-level-2 {
+	text-transform: capitalize;
+	font-family: 'Karla-Bold';
+	background-color: #fff;
+
+	>li {
+		border-top: 1px solid #eee;
+		margin-left: 30px;
+		padding-left: 10px;
+	}
+}
+
+ul .nav-level-3 {
+	text-transform: capitalize;
+	font-family: 'Karla-Regular';
+	background-color: #fff;
+	padding-bottom: 6px;
+
+	>li {
+		margin-left: 40px;
+	}
+}
+
+
+@media (min-width: 600px) {
+	.soa-nav {
+		right: 0;
+		width: 240px;
+	}
+}
+
+@media (min-width: 801px) {
+	.soa-nav {
+		position: absolute;
+		top: $header-margin-bottom + $header-height-large - 5px;
+		right: $header-margin-bottom;	
+		width: $soa-nav-width;
+		display: block;
+		background-color: transparent;
+		padding: 0;
+
+		ul {
+			line-height: 1.5;
+			color: #000;
+		}
+
+		>ul {
+			width: calc(100% / 3);
+			float: left;
+		}
+
+		li {
+			padding-left: $margin-small;
+		}
+
+		a {
+			color: #000;
+		}
+
+		a:hover {
+			color: #a93c96;
+		}
+	}
+
+	.nav-level-1 {
+		text-transform: unset;
+		font-family: 'Karla-Regular';
+
+		&:last-child {
+			border: none;
+		}
+
+		>li {
+			border-top: none;
+			position: relative;
+
+			&:hover {
+				background-color: #fff;
+			}
+		}
+	}
+
+	ul .nav-level-2 {
+		font-family: 'Karla-Regular';
+		border-top: 1px solid #ddd;
+		position: absolute;
+		left: 0px;
+		width: calc(#{$soa-nav-width} / 3);
+		padding-top: 2px;
+		padding-bottom: 8px;
+		z-index: 4;
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		li {
+			position: relative;
+			border-top: none;
+			margin-left: 0;
+			padding-left: 10px;
+		}
+	}
+
+	ul .nav-level-3 {
+		position: absolute;
+		width: calc(#{$soa-nav-width} / 3);
+		left: calc((#{$soa-nav-width} / 3) + 4px);
+		top: -4px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		
+		a:hover {
+			text-decoration: underline;
+			margin-left: 0x;
+		}
+	}
+
+	.activated {
+		&::after {
+			content: ' +';
+		}		
+	}
+}

@@ -1,0 +1,47 @@
+header {
+	height: $header-height-small;
+	background-color: #fff;
+	position: relative;
+
+	@media (min-width: 801px) {
+		height: $header-height-large;
+	}
+}
+
+.uw-logo {
+	position: absolute;
+	left: $margin-small - 6px;
+	bottom: 0;
+	height: 70%;
+	width: auto;
+	
+	@media (min-width: 600px) {
+		left: $margin-medium - 12px;
+		height: 80%;
+	}
+
+	@media (min-width: 801px) {
+		left: $margin-large - 12px;
+	}
+
+}
+
+.hamburger {
+	width: $header-height-small;
+	height: $header-height-small;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url('images/hamburger.png');
+	background-position: 14px 14px;
+	background-size: 22px 22px;
+	background-repeat: no-repeat;
+
+	@media (min-width: 801px) {
+		display: none;
+	}	
+}
+
+.hamburger-x {
+	background-image: url('images/hamburger-x.png');
+}
