@@ -258,7 +258,7 @@ ul .nav-level-3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: calc(100vh - 150px);
+  margin-top: calc(100vh - 160px);
   background-color: #fff;
   padding: 80px 10px 0; }
   @media (min-width: 600px) {
@@ -287,7 +287,7 @@ ul .nav-level-3 {
   margin-top: 30px; }
   @media (min-width: 600px) {
     .article-container {
-      padding: 80px 0 60px;
+      padding: 60px 0 60px;
       margin-bottom: 30px; } }
   @media (min-width: 600px) {
     .article-container {
