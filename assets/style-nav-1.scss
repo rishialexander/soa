@@ -1,0 +1,96 @@
+$header-height-small: 50px;
+$header-height-large: 60px;
+
+$header-margin-bottom: 45px;
+
+$home-peek: 150px;
+$inner-peek: 300px;
+
+$margin-small: 10px;
+$margin-medium: 40px;
+$margin-large: 85px;
+
+$soa-nav-width: 475px;
+
+$inner-sidebar-width-small: 200px;
+$inner-sidebar-width-medium: 300px;
+$inner-sidebar-width-large: 370px;
+
+
+@font-face {
+	font-family: 'Karla-Regular';
+	src: url('fonts/Karla/Karla-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Karla-Bold';
+	src: url('fonts/Karla/Karla-Bold.ttf');
+}
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 'Karla-Regular', 'Helvetica', sans-serif;
+	background-color: #333;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	font-family: 'Karla-Bold';	
+}
+
+h1 {
+	color: #4a2e83;
+	font-size: 32px;
+	letter-spacing: -0.5px;
+	margin: 14px 0 34px;
+}
+
+p, h2, h3, ul {
+	line-height: 1.5;
+	font-size: 14px;	
+}
+
+h2, h3 {
+	margin: 0;
+}
+
+p {
+	margin: 0 0 21px;
+}
+
+a {
+	color: #000;
+
+	&:hover {
+		color: #a93c96;
+	}
+}
+
+@import 'header';
+
+@import 'nav-alt-1';
+
+@import 'hero';
+
+@import 'content-home';
+
+@import 'content-inner';
+
+
+
+
+
+
+
+
+
