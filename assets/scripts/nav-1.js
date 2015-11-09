@@ -1,6 +1,6 @@
 var images = ['bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg'];
 // $( "#hero-image-home" ).css( "background-image", "url('assets/images/" + images[Math.floor(Math.random() * images.length)] + "')" );
-$( "#hero-image-home" ).css( "background-image", "url('assets/images/" + images[1] + "')" );
+$( "#hero-image-home" ).css( "background-image", "url('assets/images/" + images[0] + "')" );
 
 
 
