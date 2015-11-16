@@ -1,15 +1,27 @@
 var images = ['bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg'];
-$( "#hero-image-home" ).css( "background-image", "url('assets/images/" + images[Math.floor(Math.random() * images.length)] + "')" );
+// $( "#hero-image-home" ).css( "background-image", "url('assets/images/" + images[Math.floor(Math.random() * images.length)] + "')" );
+$( "#hero-image-home" ).css( "background-image", "url('assets/images/" + images[0] + "')" );
+
+
 
 $( document ).ready(function() {
 	console.log( 'ready!' );
 
+	//Desktop behavior
+	$( '.soa-nav .first' ).mouseover(function(){
+		$(this).children( '.second' ).show();
+	}).mouseleave(function(){
+		$(this).children( '.second' ).hide();
+	});
+
+
 	//Show and hide nav on mobile
 	$( '.hamburger' ).click(function(){
-		if ( $( '.soa-nav' ).is( ':hidden' ) ) {
-			$( '.soa-nav' ).slideDown(200);
+		if ( $( '.soa-nav-mobile' ).is( ':hidden' ) ) {
+			$( '.soa-nav-mobile' ).slideDown(200);
+			$( '.nav-parent' ).removeClass( 'activated' );
 		} else {
-			$( '.soa-nav' ).slideUp(200);
+			$( '.soa-nav-mobile' ).slideUp(200);
 			setTimeout(function() {
 				$( '.nav-child' ).hide();
 				$( '.nav-parent' ).removeClass( 'activated' );
@@ -31,27 +43,6 @@ $( document ).ready(function() {
 		}
 	});
 
-	//Expand and contract nav items on desktop
-	$( '.nav-parent' ).parent().mouseover(function(){
-		if ( $( '.hamburger' ).is( ':hidden' )) {
-			$(this).children( '.nav-child' ).slideDown(200);
-			$(this).children(' .nav-parent' ).addClass( 'activated' );
-			$(this).addClass( 'hovered' );
-			// clearTimeout(myTimer);
-		}
-	}).mouseleave(function(){
-		if ( $( '.hamburger' ).is( ':hidden' )) {
-			var thizz = $(this);
-
-			thizz.removeClass( 'hovered' );
-
-			myTimer = setTimeout(function(){
-				thizz.children( '.nav-child' ).slideUp(200);
-				thizz.children(' .nav-parent' ).removeClass( 'activated' );
-				// setTimeout(function(){thizz.removeClass( 'hovered' );},200);
-			},200);
-		}
-	});
 
 	//Ensure that the main hides/shows properly when resizing window
 	//and resets the hamburger icon.
@@ -61,25 +52,17 @@ $( document ).ready(function() {
 
 		if(windowWidth > 800){
 			$( '.soa-nav' ).show();
+			$( '.soa-nav-mobile' ).hide();
 			$( '.hamburger' ).removeClass( 'hamburger-x' );
 			$( '.nav-child' ).hide();
 		}
 
 		if(windowWidth <= 800 && !$( '.hamburger' ).hasClass( 'hamburger-x' ) && $( '.soa-nav' ).is( ':visible' ) ) {
-			$( '.soa-nav' ).hide();
 			$( '.nav-parent' ).removeClass( 'activated' );
+			$( '.soa-nav' ).hide();
 
 		}
 	});
-
-	// function viewport() {
-	// 	var e = window, a = 'inner';
-	// 	if (!('innerWidth' in window )) {
-	//    	a = 'client';
-	//    	e = document.documentElement || document.body;
-	// 	}
-	// 	return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
-	// }
 
 });
 
