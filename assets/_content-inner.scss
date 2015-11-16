@@ -88,6 +88,11 @@
 	background-color: #fff;
 	margin-bottom: 8px;
 
+	h3 {
+		color: #4a2e83;
+		margin-top: 12px;
+	}
+
 	ul {
 		list-style-type: none;
 		line-height: 2;
@@ -119,8 +124,8 @@
 }
 
 .inner-nav-active {
-	font-family: 'Karla-Bold';
-	color: #4a2e83;
+	// font-family: 'Karla-Bold';
+	// color: #4a2e83;
 }
 
 .inner-content-info {

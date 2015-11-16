@@ -236,12 +236,12 @@ ul .nav-level-3 {
   z-index: 1;
   left: 10px;
   top: 85px;
-  width: 120px; }
+  width: 100px; }
   @media (min-width: 600px) {
     .soa-logo {
       top: 105px;
       left: 40px;
-      width: 162px; } }
+      width: 140px; } }
   @media (min-width: 800px) {
     .soa-logo {
       left: 85px; } }
@@ -386,6 +386,9 @@ ul .nav-level-3 {
   padding: 24px 10px 24px;
   background-color: #fff;
   margin-bottom: 8px; }
+  .inner-content-nav h3 {
+    color: #4a2e83;
+    margin-top: 12px; }
   .inner-content-nav ul {
     list-style-type: none;
     line-height: 2;
@@ -409,10 +412,6 @@ ul .nav-level-3 {
     .inner-content-nav {
       padding: 10px 40px 20px;
       width: 370px; } }
-
-.inner-nav-active {
-  font-family: 'Karla-Bold';
-  color: #4a2e83; }
 
 .inner-content-info {
   box-sizing: border-box;

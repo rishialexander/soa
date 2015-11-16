@@ -23,12 +23,12 @@
 	z-index: 1;
 	left: $margin-small;
 	top: $header-margin-bottom + $header-height-large - 20px;
-	width: 120px;
+	width: 100px;
 
 	@media (min-width: 600px) {
 		top: $header-margin-bottom + $header-height-large;
 		left: $margin-medium;
-		width: 162px;
+		width: 140px;
 	}
 	
 	@media (min-width: 800px) {
