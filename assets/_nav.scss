@@ -94,7 +94,7 @@
 		margin: 0;
 		padding: 0;
 		font-size: 16px;
-		line-height: 2.4;
+		line-height: 2.5;
 	}
 
 	a {
@@ -142,10 +142,11 @@
 	}
 }
 
-.nav-level-2 {
+ul .nav-level-2 {
 	text-transform: capitalize;
 	font-family: 'Karla-Bold';
 	// background-color: #f3f3f3;
+	font-size: 15px;
 
 	>li {
 		border-top: 1px solid #fff;
@@ -163,6 +164,7 @@ ul .nav-level-3 {
 	font-family: 'Karla-Regular';
 	// background-color: #f3f3f3;
 	padding-bottom: 6px;
+	font-size: 15px;
 
 	>li {
 		margin-left: 30px;

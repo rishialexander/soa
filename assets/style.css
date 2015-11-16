@@ -164,7 +164,7 @@ ul.header-nav {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    line-height: 2.4; }
+    line-height: 2.5; }
   .soa-nav-mobile a {
     display: block;
     color: #000;
@@ -193,20 +193,22 @@ ul.header-nav {
     border-top: 1px solid #eee;
     padding-left: 10px; }
 
-.nav-level-2 {
+ul .nav-level-2 {
   text-transform: capitalize;
-  font-family: 'Karla-Bold'; }
-  .nav-level-2 > li {
+  font-family: 'Karla-Bold';
+  font-size: 15px; }
+  ul .nav-level-2 > li {
     border-top: 1px solid #fff;
     margin-left: 20px;
     padding-left: 10px; }
-  .nav-level-2 > li:last-of-type {
+  ul .nav-level-2 > li:last-of-type {
     margin-bottom: 10px; }
 
 ul .nav-level-3 {
   text-transform: capitalize;
   font-family: 'Karla-Regular';
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  font-size: 15px; }
   ul .nav-level-3 > li {
     margin-left: 30px; }
 
