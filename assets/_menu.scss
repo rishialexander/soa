@@ -1,0 +1,164 @@
+//---------------------------------------------//
+// SOA MENU WHOLE
+//---------------------------------------------//
+
+.soa-menu {
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+
+	@media (min-width: 600px)  {
+		right: 0;
+		width: 300px;
+	}
+
+	@media (min-width: 800px) {
+		display: block;
+		width: 520px;
+		background-color: transparent;
+		top: 100px;
+		right: 36px;
+	}
+}
+
+//---------------------------------------------//
+// SOA MENU
+//---------------------------------------------//
+
+.soa-menu-1, .soa-menu-2, .soa-menu-3 {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.soa-menu-1 {
+	font-weight: bold;
+	font-size: 16px;
+	padding: 0 0 0;
+}
+
+.soa-menu-2 {
+	font-weight: bold;
+	font-size: 15px;
+	padding: 0 0 16px 30px;
+	display: none;
+
+	@media (min-width: 800px) {
+		font-size: 14px;
+		position: absolute;
+		background-color: #fff;
+		padding: 8px 20px 8px 0;
+	}
+}
+
+.soa-menu-3 {
+	font-weight: normal;
+	font-size: 15px;
+	padding: 0 0 12px 30px;
+
+	@media (min-width: 800px) {
+		font-size: 14px;
+		padding: 0 0 5px 20px;
+	}
+}
+
+//---------------------------------------------//
+// SOA MENU SECTION
+//---------------------------------------------//
+
+.soa-menu-1-section {
+	border-top: 1px solid #eee;
+
+	@media (min-width: 800px) {
+		float: left;
+		border-top: none;
+		margin-right: 25px;
+
+		&:hover {
+			background-color: #fff;
+
+			.soa-menu-1-item {
+				&::after {
+					content: '';
+				}					
+			}
+		}
+	}
+}
+
+//---------------------------------------------//
+// SOA MENU ITEM
+//---------------------------------------------//
+
+.soa-menu-1-item, .soa-menu-2-item, .soa-menu-3-item {
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+.soa-menu-1-item {
+	padding: 12px 10px;
+	position: relative;
+
+	&::after {
+		content: ' +';
+		color: #000;
+	}
+
+	@media (min-width: 800px) {
+		padding: 8px 12px;
+
+		&::after {
+			position: absolute;
+			right: -2px;
+			color: #fff;
+		}
+	}
+}
+
+.soa-menu-1-item-expanded {
+	&::after {
+		content: ' -';
+	}	
+}
+
+.soa-menu-2-item {
+	padding: 10px 10px;
+
+	@media (min-width: 800px) {
+		padding: 5px 10px;
+
+		&:hover {
+			color: #a93c96;
+		}
+	}
+}
+
+.soa-menu-3-item {
+	padding: 10px 10px;
+
+	@media (min-width: 800px) {
+		padding: 4px 10px;
+
+		&:hover {
+			color: #a93c96;
+		}
+	}
+}
+
+//---------------------------------------------//
+// SOA MENU MOBILE
+//---------------------------------------------//
+
+.soa-menu-item-mobile {
+	&::after {
+		content: '';
+	}
+
+	@media (min-width: 800px) {
+		display: none;
+	}
+}
+

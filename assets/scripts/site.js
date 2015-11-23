@@ -1,68 +1,53 @@
-var images = ['bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg'];
-// $( "#hero-image-home" ).css( "background-image", "url('assets/images/" + images[Math.floor(Math.random() * images.length)] + "')" );
-$( "#hero-image-home" ).css( "background-image", "url('assets/images/" + images[0] + "')" );
-
 
 
 $( document ).ready(function() {
-	console.log( 'ready!' );
 
-	//Desktop behavior
-	$( '.soa-nav .first' ).mouseover(function(){
-		$(this).children( '.second' ).show();
-	}).mouseleave(function(){
-		$(this).children( '.second' ).hide();
-	});
-
-
-	//Show and hide nav on mobile
-	$( '.hamburger' ).click(function(){
-		if ( $( '.soa-nav-mobile' ).is( ':hidden' ) ) {
-			$( '.soa-nav-mobile' ).slideDown(200);
-			$( '.nav-parent' ).removeClass( 'activated' );
+	//[MOBILE] Show and hide the menu when clicking on the hamburger
+	//Also toggles the hamburger button icon
+	$( '.hamburger-button' ).click(function(){
+		if ( $( '.soa-menu' ).is( ':hidden' ) ) {
+			$( '.soa-menu' ).slideDown(150);
+			$(this).addClass( 'hamburger-button-x' );
 		} else {
-			$( '.soa-nav-mobile' ).slideUp(200);
-			setTimeout(function() {
-				$( '.nav-child' ).hide();
-				$( '.nav-parent' ).removeClass( 'activated' );
-			}, 200);
+			$( '.soa-menu' ).slideUp(150);
+			$(this).removeClass( 'hamburger-button-x' );
 		}
-		$( ".hamburger" ).toggleClass( "hamburger-x" );
 	});
 
-	//Expand and contract nav items on mobile
-	$( '.nav-parent' ).click(function(){
-		if ( $( '.hamburger' ).is( ':visible' )) {
-			if ( $(this).siblings( '.nav-child' ).is( ':hidden' ) ) {
-				$(this).siblings( '.nav-child' ).slideDown(200);
-				$(this).addClass( 'activated' );
+	//[MOBILE] Expand and close sub-menus, if the hamburger button is visible
+	$( '.soa-menu-1-item:not(.soa-menu-item-mobile)').click(function(){
+		if ( $( '.hamburger-button' ).is( ':visible' ) ) {
+			if ( $(this).siblings( '.soa-menu-2' ).is( ':hidden' ) ) {
+				$(this).siblings( '.soa-menu-2' ).slideDown(150);
+				$(this).addClass( 'soa-menu-1-item-expanded' ); //Appends '-' to menu item
 			} else {
-				$(this).siblings( '.nav-child' ).slideUp(200);
-				$(this).removeClass( 'activated' );
+				$(this).siblings( '.soa-menu-2' ).slideUp(150);
+				$(this).removeClass( 'soa-menu-1-item-expanded' ); //Appends '+' to menu item
 			}
 		}
 	});
 
-
-	//Ensure that the main hides/shows properly when resizing window
-	//and resets the hamburger icon.
+	//[TRANSITION] Makes the menu behave properly when resizing
 	$(window).resize(function(){
-   	var windowWidth = $(window).width();
-   	// var windowWidth = viewport().width;
-
-		if(windowWidth > 800){
-			$( '.soa-nav' ).show();
-			$( '.soa-nav-mobile' ).hide();
-			$( '.hamburger' ).removeClass( 'hamburger-x' );
-			$( '.nav-child' ).hide();
+		if ( (window).innerWidth >= 800 ) {
+			$( '.hamburger-button' ).removeClass( 'hamburger-button-x' );
+			$( '.soa-menu' ).show();
+			$( '.soa-menu-2' ).hide();
+			$( '.soa-menu-1-item' ).removeClass( 'soa-menu-1-item-expanded' );
+		} else if ( !$( '.hamburger-button' ).hasClass( 'hamburger-button-x' ) ) {
+			$( '.soa-menu' ).hide();
 		}
+	});
 
-		if(windowWidth <= 800 && !$( '.hamburger' ).hasClass( 'hamburger-x' ) && $( '.soa-nav' ).is( ':visible' ) ) {
-			$( '.nav-parent' ).removeClass( 'activated' );
-			$( '.soa-nav' ).hide();
-
+	//[DESKTOP]
+	$( '.soa-menu-1-section' ).mouseover(function(){
+		if ( $( '.hamburger-button' ).is( ':hidden' ) ) {
+			$(this).children( '.soa-menu-2' ).show();
+		}
+	}).mouseleave(function(){
+		if ( $( '.hamburger-button' ).is( ':hidden' ) ) {
+			$(this).children( '.soa-menu-2' ).hide();
 		}
 	});
 
 });
-

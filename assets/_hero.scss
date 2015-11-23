@@ -1,37 +1,35 @@
-.hero-image {
+.hero {
 	position: absolute;
-	top: $header-height-small;
 	width: 100%;
-	height: calc(100% - #{$header-height-small});
 	z-index: -1;
 	background-color: #ccc;
-	background-image: url('images/bg-1.jpg');
 	background-size: cover;
+	top: $header-height-mobile;
+	height: calc(100% - #{$header-height-mobile});
+
+	@media (min-width: 800px) {
+		top: $header-height-desktop;
+		height: calc(100% - #{$header-height-desktop});
+	}
 }
 
-#hero-image-sandpoint {
-	background-image: url('images/bg-sandpoint.jpg');
-	height: calc(75% - #{$header-height-small});
-
-	@media (min-width: 600px) {
-		height: calc(100% - #{$header-height-small});
-	}	
+.hero-home {
+	background-image: url('images/bg-1.jpg');
 }
 
 .soa-logo {
+	width: 110px;
 	position: absolute;
-	z-index: 1;
-	left: $margin-small;
-	top: $header-margin-bottom + $header-height-large - 20px;
-	width: 100px;
+	top: 112px;
+	left: $margin-mobile;
 
 	@media (min-width: 600px) {
-		top: $header-margin-bottom + $header-height-large;
-		left: $margin-medium;
-		width: 140px;
+		width: 125px;
+		left: $margin-tablet;
 	}
-	
+
 	@media (min-width: 800px) {
-		left: $margin-large;
+		width: 140px;
+		left: $margin-desktop;
 	}
 }

@@ -1,44 +1,103 @@
-footer {
-	clear: both;
+.footer {
+	background-color: #333;
 	color: #ccc;
-	padding: 80px $margin-small 80px;
 	font-size: 12.5px;
-	line-height: 1.5;
-
-	@media (min-width: 600px) {
-		padding: 80px $margin-medium 80px;
-	}
-	
-	@media (min-width: 800px) {
-		padding: 80px $margin-large 80px;
-	}
+	line-height: 18px;
+	padding: 40px $margin-mobile 40px;
+	clear: both;
 
 	a {
-		text-decoration: none;
-		font-family: 'Karla-Bold';
 		color: #ccc;
-	}
+		font-weight: bold;
+		text-decoration: none;
 
-	img {
-		margin-right: 12px;
-		opacity: 0.7;
-	}
-
-	div {
-		padding-bottom: 80px;
-		width: 100%;
-		float: left;
-		padding-bottom: 40px;
-		padding-right: 20px;
-		box-sizing: border-box;
-
-		@media (min-width: 600px) {
-			width: 50%;
-		}
-		
-		@media (min-width: 800px) {
-			width: 25%;
-			padding-bottom: 80px;
+		&:hover {
+			text-decoration: underline;
 		}
 	}
+
+	@media (min-width: 600px) {
+		padding: 40px $margin-tablet 40px;
+	}
+
+	@media (min-width: 800px) {
+		padding: 40px $margin-desktop 40px;		
+	}
+}
+
+.footer-social-icons {
+	width: 120px;
+}
+
+.footer-support-button {
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 4px 10px;
+}
+
+.footer-section {
+	box-sizing: border-box;
+	float: left;
+	margin: 0 0 40px;
+	padding: 20px 20px 0 0;
+
+	@media (min-width: 600px) {
+		margin: 0 0 40px;
+	}
+
+	@media (min-width: 800px) {
+		margin: 0 0 100px;
+	}
+}
+
+.footer-1 {
+	width: 100%;
+
+	@media (min-width: 600px) {
+		width: 50%;
+	}
+
+	@media (min-width: 800px) {
+		width: 30%;
+	}
+}
+
+.footer-2 {
+	width: 100%;
+
+	@media (min-width: 600px) {
+		width: 50%;
+	}
+
+	@media (min-width: 800px) {
+		width: 20%;
+	}
+}
+
+.footer-3 {
+	width: 100%;
+
+	@media (min-width: 600px) {
+		width: 50%;
+	}
+
+	@media (min-width: 800px) {
+		width: 25%;
+	}
+}
+
+.footer-4 {
+	width: 100%;
+
+	@media (min-width: 600px) {
+		width: 50%;
+	}
+
+	@media (min-width: 800px) {
+		width: 20%;
+	}
+}
+
+.footer-clearfix {
+	clear: both;
 }

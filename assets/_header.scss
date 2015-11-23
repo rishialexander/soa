@@ -1,71 +1,66 @@
-header {
-	height: $header-height-small;
+.header {
 	background-color: #fff;
+	height: 50px;
 	position: relative;
 
-	@media (min-width: 801px) {
-		height: $header-height-large;
+	@media (min-width: 800px) {
+		height: 60px;
 	}
 }
 
 .uw-logo {
 	position: absolute;
-	left: $margin-small - 6px;
+	height: 75%;
 	bottom: 0;
-	height: 70%;
-	width: auto;
-	
+	left: $margin-mobile - 5px;
+
 	@media (min-width: 600px) {
-		left: $margin-medium - 12px;
-		height: 80%;
+		left: $margin-tablet - 10px;
 	}
 
-	@media (min-width: 801px) {
-		left: $margin-large - 12px;
+	@media (min-width: 800px) {
+		left: $margin-desktop - 10px;		
 	}
-
 }
 
-ul.header-nav {
-	display: none;
-
-	@media (min-width: 930px) {
-		display: block;
-		padding: 0;
-		margin: 0;
-		color: #999;
-		position: absolute;
-		right: 20px;
-		top: 20px;
-		font-size: 13px;
-
-		li {
-			display: inline;
-		}
-
-		a {
-			color: #999;
-		}	
-	}
-
-}
-
-.hamburger {
-	width: $header-height-small;
-	height: $header-height-small;
+.uw-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
 	position: absolute;
-	top: 0;
+	right: 38px;
+	top: 36%;
+
+	li {
+		display: inline;
+		color: #999;
+	}
+
+	li > a {
+		color: #999;
+	}
+
+	@media (max-width: 960px) {
+		display: none;
+	}
+}
+
+.hamburger-button {
+	width: 50px;
+	height: 50px;
+	position: absolute;
 	right: 0;
 	background-image: url('images/hamburger.png');
 	background-position: 14px 14px;
 	background-size: 22px 22px;
 	background-repeat: no-repeat;
 
-	@media (min-width: 801px) {
+	@media (min-width: 800px) {
 		display: none;
-	}	
+	}
 }
 
-.hamburger-x {
-	background-image: url('images/hamburger-x.png');
+.hamburger-button-x {
+	background-image: url('images/hamburger-x.png');	
 }

@@ -3,32 +3,67 @@
 	// margin-top: calc(100vh - #{$inner-peek});
 	margin-top: calc(125px + 15vh);
 	z-index: 2;
+
+	h1, h2, h3 {
+		font-weight: normal;
+		font-family: 'Karla-Bold';	
+	}
+
+	h1 {
+		color: #4a2e83;
+		font-size: 32px;
+		letter-spacing: -0.5px;
+		margin: 14px 0 34px;
+	}
+
+	p, h2, h3, ul {
+		line-height: 1.5;
+		font-size: 14px;	
+	}
+
+	h2, h3 {
+		margin: 0;
+	}
+
+	p {
+		margin: 0 0 21px;
+	}
+
+	a {
+		color: #000;
+
+		&:hover {
+			color: #a93c96;
+		}
+	}
+
+	
 }
 
 .inner-content-main {
 	box-sizing: border-box;
 	border-top: 15px solid #000;
 	background-color: #fff;
-	padding: 0 $margin-small 12px;
+	padding: 0 $margin-mobile 12px;
 	margin-bottom: 8px;
 
 	@media (min-width: 600px) {
-		margin-left: $margin-medium;
+		margin-left: $margin-tablet;
 		margin-right: 8px;
 		float: left;
-		width: calc(100% - #{$margin-medium} - 8px - #{$inner-sidebar-width-small});
+		width: calc(100% - #{$margin-tablet} - 8px - #{$inner-sidebar-width-small});
 		max-width: 670px;
 		padding: 0 20px 12px;
 	}
 	
 	@media (min-width: 800px) {
-		margin-left: $margin-large;
-		width: calc(100% - #{$margin-large} - 8px - #{$inner-sidebar-width-medium});
+		margin-left: $margin-desktop;
+		width: calc(100% - #{$margin-desktop} - 8px - #{$inner-sidebar-width-medium});
 		padding: 0 40px 12px;
 	}
 
 	@media (min-width: 1000px) {
-		width: calc(100% - #{$margin-large} - 8px - #{$inner-sidebar-width-large});
+		width: calc(100% - #{$margin-desktop} - 8px - #{$inner-sidebar-width-large});
 		padding: 0 60px 12px;
 	}
 
@@ -40,7 +75,7 @@
 }
 
 .breadcrumbs {
-	width: calc(100% + #{$margin-small});
+	width: calc(100% + #{$margin-mobile});
 	border-bottom: 1px solid #ddd;
 	font-size: 12px;
 	font-family: 'Karla-Bold';
@@ -84,7 +119,7 @@
 
 .inner-content-nav {
 	box-sizing: border-box;
-	padding: 24px $margin-small 24px;
+	padding: 24px $margin-mobile 24px;
 	background-color: #fff;
 	margin-bottom: 8px;
 
@@ -130,7 +165,7 @@
 
 .inner-content-info {
 	box-sizing: border-box;
-	padding: 24px $margin-small 2px;
+	padding: 24px $margin-mobile 2px;
 	background-color: #000;
 	margin-bottom: 8px;
 	color: #fff;
