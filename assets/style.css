@@ -264,139 +264,149 @@ body {
   font-size: 14px;
   line-height: 1.4; }
 
-.inner-content {
-  position: relative;
-  margin-top: calc(125px + 15vh);
-  z-index: 2; }
-  .inner-content h1, .inner-content h2, .inner-content h3 {
-    font-weight: normal;
-    font-family: 'Karla-Bold'; }
-  .inner-content h1 {
-    color: #4a2e83;
-    font-size: 32px;
-    letter-spacing: -0.5px;
-    margin: 14px 0 34px; }
-  .inner-content p, .inner-content h2, .inner-content h3, .inner-content ul {
-    line-height: 1.5;
-    font-size: 14px; }
-  .inner-content h2, .inner-content h3 {
-    margin: 0; }
-  .inner-content p {
-    margin: 0 0 21px; }
-  .inner-content a {
-    color: #000; }
-    .inner-content a:hover {
-      color: #a93c96; }
-
-.inner-content-main {
-  box-sizing: border-box;
-  border-top: 15px solid #000;
-  background-color: #fff;
-  padding: 0 10px 12px;
-  margin-bottom: 8px; }
-  @media (min-width: 600px) {
-    .inner-content-main {
-      margin-left: 40px;
-      margin-right: 8px;
-      float: left;
-      width: calc(100% - 40px - 8px - 200px);
-      max-width: 670px;
-      padding: 0 20px 12px; } }
-  @media (min-width: 800px) {
-    .inner-content-main {
-      margin-left: 85px;
-      width: calc(100% - 85px - 8px - 300px);
-      padding: 0 40px 12px; } }
+.inner h1 {
+  color: #4a2e83;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  margin: 14px 0 34px; }
+.inner h2 {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5; }
   @media (min-width: 1000px) {
-    .inner-content-main {
-      width: calc(100% - 85px - 8px - 370px);
-      padding: 0 60px 12px; } }
-  @media (min-width: 1000px) {
-    .inner-content-main p, .inner-content-main h2, .inner-content-main h3, .inner-content-main ul {
+    .inner h2 {
       font-size: 15px; } }
+.inner h3 {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0; }
+  @media (min-width: 1000px) {
+    .inner h3 {
+      font-size: 15px; } }
+.inner p {
+  font-size: 14px;
+  margin: 0 0 21px;
+  line-height: 1.5; }
+  @media (min-width: 1000px) {
+    .inner p {
+      font-size: 15px; } }
+.inner ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 2; }
+  @media (min-width: 800px) {
+    .inner ul {
+      line-height: 1.5;
+      margin-bottom: 12px; } }
+.inner li {
+  font-size: 14px; }
 
-.breadcrumbs {
-  width: calc(100% + 10px);
+.inner-breadcrumbs {
   border-bottom: 1px solid #ddd;
+  padding: 14px 0;
   font-size: 12px;
-  font-family: 'Karla-Bold';
   letter-spacing: 0.5px;
-  padding: 14px 0; }
+  font-weight: bold;
+  width: calc(100% + 10px); }
   @media (min-width: 600px) {
-    .breadcrumbs {
+    .inner-breadcrumbs {
       width: calc(100% + 20px); } }
   @media (min-width: 800px) {
-    .breadcrumbs {
+    .inner-breadcrumbs {
       width: calc(100% + 40px); } }
   @media (min-width: 1000px) {
-    .breadcrumbs {
+    .inner-breadcrumbs {
       width: calc(100% + 60px); } }
-  .breadcrumbs a {
-    text-decoration: none; }
-  .breadcrumbs a:hover {
+
+.inner-breadcrumb {
+  color: #000;
+  text-decoration: none; }
+  .inner-breadcrumb:hover {
+    color: #a93c96;
     text-decoration: underline; }
 
-.breadcrumb-active {
-  color: #4a2e83; }
-  .breadcrumb-active:hover {
-    color: #a93c96; }
+.content-inner-1 {
+  margin-top: calc(125px + 15vh); }
+
+.inner-1-main {
+  background: #fff;
+  border-top: 15px solid #000;
+  margin: 0 0 8px;
+  padding: 0 10px 24px;
+  max-width: 550px; }
+  @media (min-width: 600px) {
+    .inner-1-main {
+      float: left;
+      margin-left: 40px;
+      width: calc(100% - 40px - 8px - 240px);
+      padding: 0 20px 24px; } }
+  @media (min-width: 800px) {
+    .inner-1-main {
+      margin-left: 85px;
+      width: calc(100% - 85px - 8px - 380px);
+      padding: 0 40px 24px; } }
+  @media (min-width: 1000px) {
+    .inner-1-main {
+      width: calc(100% - 85px - 8px - 490px);
+      padding: 0 60px 24px; } }
 
 @media (min-width: 600px) {
-  .inner-content-sidebar {
-    float: left; } }
+  .inner-1-sidebar {
+    margin-left: 8px;
+    float: left;
+    width: 200px; } }
+@media (min-width: 800px) {
+  .inner-1-sidebar {
+    margin-left: 8px;
+    width: 300px; } }
+@media (min-width: 1000px) {
+  .inner-1-sidebar {
+    width: 370px; } }
 
-.inner-content-nav {
-  box-sizing: border-box;
-  padding: 24px 10px 24px;
-  background-color: #fff;
-  margin-bottom: 8px; }
-  .inner-content-nav h3 {
-    color: #4a2e83;
-    margin-top: 12px; }
-  .inner-content-nav ul {
-    list-style-type: none;
-    line-height: 2;
-    margin: 0;
-    padding: 0;
-    font-size: 14px; }
-    @media (min-width: 800px) {
-      .inner-content-nav ul {
-        line-height: 1.5; } }
+.inner-1-nav {
+  background: #fff;
+  margin: 0 0 8px;
+  padding: 24px 10px; }
   @media (min-width: 600px) {
-    .inner-content-nav {
-      padding: 10px 20px 16px;
-      background-color: rgba(255, 255, 255, 0.85);
+    .inner-1-nav {
       border-top: 15px solid #000;
-      width: 200px; } }
+      padding: 24px 20px;
+      background: rgba(255, 255, 255, 0.9); } }
   @media (min-width: 800px) {
-    .inner-content-nav {
-      padding: 10px 30px 16px;
-      width: 300px; } }
+    .inner-1-nav {
+      padding: 24px 30px; } }
   @media (min-width: 1000px) {
-    .inner-content-nav {
-      padding: 10px 40px 20px;
-      width: 370px; } }
+    .inner-1-nav {
+      padding: 24px 40px; } }
+  .inner-1-nav h2 {
+    color: #4a2e83; }
 
-.inner-content-info {
-  box-sizing: border-box;
-  padding: 24px 10px 2px;
-  background-color: #000;
-  margin-bottom: 8px;
-  color: #fff; }
-  .inner-content-info a {
-    color: #ccc; }
+.inner-nav-link {
+  color: #000; }
+  .inner-nav-link:hover {
+    color: #a93c96; }
+
+.inner-1-info {
+  background: #000;
+  color: #fff;
+  padding: 24px 10px; }
+  .inner-1-info p {
+    font-size: 14px; }
   @media (min-width: 600px) {
-    .inner-content-info {
-      width: 200px;
-      padding: 24px 20px 2px; } }
+    .inner-1-info {
+      padding: 24px 20px; } }
   @media (min-width: 800px) {
-    .inner-content-info {
-      width: 300px;
-      padding: 24px 30px 2px; } }
+    .inner-1-info {
+      padding: 24px 30px; } }
   @media (min-width: 1000px) {
-    .inner-content-info {
-      width: 370px;
-      padding: 30px 40px 8px; } }
+    .inner-1-info {
+      padding: 24px 40px; } }
+
+.inner-info-link {
+  color: #ccc; }
+  .inner-info-link:hover {
+    color: #a93c96; }
 
 .footer {
   background-color: #333;
