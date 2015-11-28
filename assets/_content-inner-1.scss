@@ -1,6 +1,6 @@
 .inner {
 	h1 {
-		color: #4a2e83;
+		color: #4b2d83;
 		font-size: 32px;
 		letter-spacing: -0.5px;
 		margin: 14px 0 34px;
@@ -151,15 +151,18 @@
 	}
 
 	h2 {
-		color: #4a2e83;
+		color: #4b2d83;
 	}
 }
 
 .inner-nav-link {
 	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
 
 	&:hover {
-		color: #a93c96;		
+		color: #a93c96;
+		border-bottom: 1px solid #a93c96;	
 	}
 }
 
