@@ -388,7 +388,7 @@ body {
   border-bottom: 1px solid #ccc; }
   .inner-nav-link:hover {
     color: #a93c96;
-    border-bottom: none; }
+    border-bottom: 1px solid #a93c96; }
 
 .inner-1-info {
   background: #000;
