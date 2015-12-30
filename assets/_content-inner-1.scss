@@ -1,39 +1,63 @@
 .inner {
 	h1 {
-		color: #4b2d83;
-		font-size: 32px;
-		letter-spacing: -0.5px;
+		font-size: 35px;
+		font-weight: bold;
+		color: #000;
+		line-height: 35px;
+		letter-spacing: 0.1px;
 		margin: 14px 0 34px;
 	}
 
 	h2 {
-		font-size: 14px;
-		margin: 0;
-		line-height: 1.5;
-
-		@media (min-width: 1000px) {
-			font-size: 15px;
-		}
+		font-size: 24px;
+		font-weight: bold;
+		color: #000;
+		line-height: 35px;
+		letter-spacing: -0.5px;
+		margin: 0 0 10px;
 	}
 
 	h3 {
-		font-size: 14px;
-		line-height: 1.5;
+		font-size: 20px;
+		font-weight: bold;
+		color: #000;
+		line-height: 35px;
+		letter-spacing: -0.2px;
 		margin: 0;
-
-		@media (min-width: 1000px) {
-			font-size: 15px;
-		}
 	}
 
-	p {
-		font-size: 14px;
-		margin: 0 0 21px;
-		line-height: 1.5;
+	h4 {
+		font-size: 15px;
+		font-weight: bold;
+		color: #000;
+		line-height: 35px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin: 0;
+	}
 
-		@media (min-width: 1000px) {
-			font-size: 15px;
-		}
+	h5 {
+		font-size: 15px;
+		font-weight: bold;
+		color: #000;
+		line-height: 35px;
+		margin: 0;
+	}
+
+	h6 {
+		font-size: 15px;
+		font-style: italic;
+		font-weight: bold;
+		color: #000;
+		line-height: 35px;
+		margin: 0;
+	}	
+
+	p {
+		font-size: 16px;
+		color: #000;
+		line-height: 24px;
+		margin: 0 0 21px;
 	}
 
 	ul {
@@ -49,7 +73,7 @@
 	}
 
 	li {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 
@@ -129,6 +153,10 @@
 	@media (min-width: 1000px) {
 		width: 370px;
 	}
+
+	li {
+		font-size: 14px;
+	}
 }
 
 .inner-1-nav {
@@ -151,26 +179,30 @@
 	}
 
 	h2 {
-		color: #4b2d83;
+		color: #000;
 	}
 }
 
 .inner-nav-link {
-	color: #000;
+	color: #4b2d83;
 	text-decoration: none;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #bbb;
+	font-weight: bold;
 
 	&:hover {
 		color: #a93c96;
-		border-bottom: 1px solid #a93c96;	
+		// border-bottom: 1px solid #a93c96;	
 	}
 }
 
 .inner-1-info {
 	background: #000;
-	color: #fff;
 	padding: 24px 10px;
-		
+	
+	h1, h2, h3, h4, h5, h6, p {
+		color: #fff;
+	}
+	
 	p {
 		font-size: 14px;
 	}
@@ -186,10 +218,13 @@
 	@media (min-width: 1000px) {
 		padding: 24px 40px;
 	}
+
 }
 
 .inner-info-link {
-	color: #ccc;
+	color: #bbb;
+	text-decoration: none;
+	border-bottom: 1px solid #bbb;
 
 	&:hover {
 		color: #a93c96;		
