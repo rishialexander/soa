@@ -14,7 +14,8 @@
 		color: #000;
 		line-height: 35px;
 		letter-spacing: -0.5px;
-		margin: 0 0 10px;
+		// margin: 0 0 10px;
+		margin: 0;
 	}
 
 	h3 {
@@ -84,6 +85,7 @@
 	letter-spacing: 0.5px;
 	font-weight: bold;
 	width: calc(100% + 10px);
+	color: #999;
 
 	@media (min-width: 600px) {
 		width: calc(100% + 20px);		
@@ -99,7 +101,7 @@
 }
 
 .inner-breadcrumb {
-	color: #000;
+	color: #999;
 	text-decoration: none;
 
 	&:hover {

@@ -103,7 +103,7 @@ body {
       display: block;
       width: 520px;
       background-color: transparent;
-      top: 100px;
+      top: 90px;
       right: 36px; } }
 
 .soa-menu-1, .soa-menu-2, .soa-menu-3 {
@@ -226,7 +226,7 @@ body {
 .soa-logo {
   width: 110px;
   position: absolute;
-  top: 112px;
+  top: 102px;
   left: 10px; }
   @media (min-width: 600px) {
     .soa-logo {
@@ -293,7 +293,7 @@ body {
   color: #000;
   line-height: 35px;
   letter-spacing: -0.5px;
-  margin: 0 0 10px; }
+  margin: 0; }
 .inner h3 {
   font-size: 20px;
   font-weight: bold;
@@ -345,7 +345,8 @@ body {
   font-size: 12px;
   letter-spacing: 0.5px;
   font-weight: bold;
-  width: calc(100% + 10px); }
+  width: calc(100% + 10px);
+  color: #999; }
   @media (min-width: 600px) {
     .inner-breadcrumbs {
       width: calc(100% + 20px); } }
@@ -357,7 +358,7 @@ body {
       width: calc(100% + 60px); } }
 
 .inner-breadcrumb {
-  color: #000;
+  color: #999;
   text-decoration: none; }
   .inner-breadcrumb:hover {
     color: #a93c96;
