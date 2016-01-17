@@ -27,18 +27,18 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	font-size: 13px;
+	font-size: 0.81rem;
 	position: absolute;
 	right: 38px;
 	top: 36%;
 
 	li {
 		display: inline;
-		color: #999;
+		color: #666;
 	}
 
 	li > a {
-		color: #999;
+		color: #666;
 		text-decoration: none;
 
 		&:hover {

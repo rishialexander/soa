@@ -56,15 +56,15 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 0.81rem;
   position: absolute;
   right: 38px;
   top: 36%; }
   .uw-links li {
     display: inline;
-    color: #999; }
+    color: #666; }
   .uw-links li > a {
-    color: #999;
+    color: #666;
     text-decoration: none; }
     .uw-links li > a:hover {
       text-decoration: underline; }
@@ -113,28 +113,28 @@ body {
 
 .soa-menu-1 {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 0 0 0; }
 
 .soa-menu-2 {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 0.94rem;
   padding: 0 0 0 0;
   display: none; }
   @media (min-width: 800px) {
     .soa-menu-2 {
-      font-size: 14px;
+      font-size: 0.88rem;
       position: absolute;
       background-color: #fff;
       padding: 8px 20px 8px 0; } }
 
 .soa-menu-3 {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 0.94rem;
   padding: 0 0 8px 24px; }
   @media (min-width: 800px) {
     .soa-menu-3 {
-      font-size: 14px;
+      font-size: 0.88rem;
       padding: 0 0 5px 20px; } }
 
 .soa-menu-1-section {
@@ -183,7 +183,9 @@ body {
 
 .soa-menu-2-item {
   padding: 12px 10px;
-  color: #a93c96; }
+  color: #000; }
+  .soa-menu-2-item:active {
+    color: #a93c96; }
   @media (min-width: 800px) {
     .soa-menu-2-item {
       padding: 5px 10px;
@@ -193,7 +195,9 @@ body {
 
 .soa-menu-3-item {
   padding: 10px 10px;
-  color: #a93c96; }
+  color: #000; }
+  .soa-menu-3-item:active {
+    color: #a93c96; }
   @media (min-width: 800px) {
     .soa-menu-3-item {
       padding: 4px 10px;
@@ -266,7 +270,7 @@ body {
   width: 100%; }
 
 .feature-link {
-  font-size: 15px;
+  font-size: 0.94rem;
   font-weight: bold;
   color: #4b2d83;
   text-decoration: none;
@@ -277,53 +281,53 @@ body {
     color: #a93c96; }
 
 .feature-description {
-  font-size: 15px;
+  font-size: 0.94rem;
   line-height: 1.5; }
 
 .inner h1 {
-  font-size: 35px;
+  font-size: 2.2rem;
   font-weight: bold;
   color: #000;
-  line-height: 35px;
+  line-height: 1;
   letter-spacing: 0.1px;
   margin: 14px 0 34px; }
 .inner h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #000;
-  line-height: 35px;
+  line-height: 1.45;
   letter-spacing: -0.5px;
   margin: 0; }
 .inner h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #000;
-  line-height: 35px;
+  line-height: 1.75;
   letter-spacing: -0.2px;
   margin: 0; }
 .inner h4 {
-  font-size: 15px;
+  font-size: 0.94rem;
   font-weight: bold;
   color: #000;
-  line-height: 35px;
+  line-height: 2.33;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0; }
 .inner h5 {
-  font-size: 15px;
+  font-size: 0.94rem;
   font-weight: bold;
   color: #000;
-  line-height: 35px;
+  line-height: 2.33;
   margin: 0; }
 .inner h6 {
-  font-size: 15px;
+  font-size: 0.94rem;
   font-style: italic;
   font-weight: bold;
   color: #000;
-  line-height: 35px;
+  line-height: 2.33;
   margin: 0; }
 .inner p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #000;
   line-height: 1.5;
   margin: 0 0 21px; }
@@ -337,16 +341,15 @@ body {
       line-height: 1.5;
       margin-bottom: 12px; } }
 .inner li {
-  font-size: 16px; }
+  font-size: 1rem; }
 
 .inner-breadcrumbs {
   border-bottom: 1px solid #ddd;
   padding: 14px 0;
-  font-size: 12px;
+  font-size: 0.75rem;
   letter-spacing: 0.5px;
   font-weight: bold;
-  width: calc(100% + 10px);
-  color: #999; }
+  width: calc(100% + 10px); }
   @media (min-width: 600px) {
     .inner-breadcrumbs {
       width: calc(100% + 20px); } }
@@ -358,14 +361,32 @@ body {
       width: calc(100% + 60px); } }
 
 .inner-breadcrumb {
-  color: #999;
-  text-decoration: none; }
+  color: #4b2d83;
+  text-decoration: none;
+  font-weight: bold; }
   .inner-breadcrumb:hover {
     color: #a93c96;
-    text-decoration: underline; }
+    border-bottom: 1px solid #ccc; }
 
 .content-inner-1 {
   margin-top: calc(125px + 15vh); }
+
+.sections-inner-1 {
+  width: 100%; }
+  @media (min-width: 600px) {
+    .sections-inner-1 {
+      float: right;
+      margin-left: 40px;
+      width: calc(100% - 40px); } }
+  @media (min-width: 800px) {
+    .sections-inner-1 {
+      margin-left: 85px;
+      width: calc(100% - 85px); } }
+  @media (min-width: 1250px) {
+    .sections-inner-1 {
+      float: none;
+      width: 1058px;
+      margin: 0 auto; } }
 
 .inner-1-main {
   background: #fff;
@@ -376,18 +397,23 @@ body {
   @media (min-width: 600px) {
     .inner-1-main {
       float: left;
-      margin-left: 40px;
-      width: calc(100% - 40px - 8px - 240px);
+      width: calc(100% - 8px - 240px);
       padding: 0 20px 24px; } }
   @media (min-width: 800px) {
     .inner-1-main {
-      margin-left: 85px;
-      width: calc(100% - 85px - 8px - 330px);
+      width: calc(100% - 8px - 330px);
       padding: 0 40px 24px; } }
   @media (min-width: 1000px) {
     .inner-1-main {
-      width: calc(100% - 85px - 8px - 490px);
+      width: calc(100% - 8px - 490px);
       padding: 0 60px 24px; } }
+
+.inner-content-link {
+  color: #4b2d83;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc; }
+  .inner-content-link:hover {
+    color: #a93c96; }
 
 .inner-image-container {
   overflow: hidden;
@@ -412,7 +438,7 @@ body {
   .inner-1-sidebar {
     width: 370px; } }
 .inner-1-sidebar li {
-  font-size: 14px; }
+  font-size: 0.875rem; }
 
 .inner-1-nav {
   background: #fff;
@@ -446,7 +472,7 @@ body {
   .inner-1-info h1, .inner-1-info h2, .inner-1-info h3, .inner-1-info h4, .inner-1-info h5, .inner-1-info h6, .inner-1-info p {
     color: #fff; }
   .inner-1-info p {
-    font-size: 14px; }
+    font-size: 0.875rem; }
   @media (min-width: 600px) {
     .inner-1-info {
       padding: 24px 20px; } }
@@ -458,7 +484,7 @@ body {
       padding: 24px 40px; } }
 
 .inner-info-link {
-  color: #ccc;
+  color: #b7a57a;
   text-decoration: none;
   border-bottom: 1px solid #ccc; }
   .inner-info-link:hover {
@@ -467,7 +493,7 @@ body {
 .footer {
   background-color: #333;
   color: #ccc;
-  font-size: 12.5px;
+  font-size: 0.78rem;
   line-height: 18px;
   padding: 40px 10px 40px;
   clear: both; }

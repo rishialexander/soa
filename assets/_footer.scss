@@ -1,7 +1,7 @@
 .footer {
 	background-color: #333;
 	color: #ccc;
-	font-size: 12.5px;
+	font-size: 0.78rem;
 	line-height: 18px;
 	padding: 40px $margin-mobile 40px;
 	clear: both;
@@ -21,12 +21,12 @@
 	}
 
 	@media (min-width: 800px) {
-		padding: 40px $margin-desktop 40px;		
+		padding: 40px $margin-desktop 40px;
 	}
 }
 
 .footer-social-icons {
-	width: 120px;
+	width: 120px; 
 }
 
 .footer-support-button {

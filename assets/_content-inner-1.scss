@@ -1,61 +1,61 @@
 .inner {
 	h1 {
-		font-size: 35px;
+		font-size: 2.2rem;
 		font-weight: bold;
 		color: #000;
-		line-height: 35px;
+		line-height: 1;
 		letter-spacing: 0.1px;
 		margin: 14px 0 34px;
 	}
 
 	h2 {
-		font-size: 24px;
+		font-size: 1.5rem;
 		font-weight: bold;
 		color: #000;
-		line-height: 35px;
+		line-height: 1.45;
 		letter-spacing: -0.5px;
 		// margin: 0 0 10px;
 		margin: 0;
 	}
 
 	h3 {
-		font-size: 20px;
+		font-size: 1.25rem;
 		font-weight: bold;
 		color: #000;
-		line-height: 35px;
+		line-height: 1.75;
 		letter-spacing: -0.2px;
 		margin: 0;
 	}
 
 	h4 {
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-weight: bold;
 		color: #000;
-		line-height: 35px;
+		line-height: 2.33;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		margin: 0;
 	}
 
 	h5 {
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-weight: bold;
 		color: #000;
-		line-height: 35px;
+		line-height: 2.33;
 		margin: 0;
 	}
 
 	h6 {
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-style: italic;
 		font-weight: bold;
 		color: #000;
-		line-height: 35px;
+		line-height: 2.33;
 		margin: 0;
-	}	
+	}
 
 	p {
-		font-size: 16px;
+		font-size: 1rem;
 		color: #000;
 		line-height: 1.5;
 		margin: 0 0 21px;
@@ -74,44 +74,71 @@
 	}
 
 	li {
-		font-size: 16px;
+		font-size: 1rem;
 	}
 }
 
 .inner-breadcrumbs {
 	border-bottom: 1px solid #ddd;
 	padding: 14px 0;
-	font-size: 12px;
+	font-size: 0.75rem;
 	letter-spacing: 0.5px;
 	font-weight: bold;
 	width: calc(100% + 10px);
-	color: #999;
 
 	@media (min-width: 600px) {
-		width: calc(100% + 20px);		
+		width: calc(100% + 20px);
 	}
 
 	@media (min-width: 800px) {
-		width: calc(100% + 40px);		
+		width: calc(100% + 40px);
 	}
 
 	@media (min-width: 1000px) {
-		width: calc(100% + 60px);		
+		width: calc(100% + 60px);
 	}
 }
 
 .inner-breadcrumb {
-	color: #999;
+	color: #4b2d83;
 	text-decoration: none;
+	font-weight: bold;
 
 	&:hover {
 		color: #a93c96;
-		text-decoration: underline;
+		border-bottom: 1px solid #ccc;
+
 	}
 }
 
 .content-inner-1 {
 	margin-top: calc(125px + 15vh);
+}
+
+.sections-inner-1 {
+	width: 100%;
+
+	@media (min-width: 600px) {
+		float: right;
+		margin-left: 40px;
+		width: calc(100% - 40px);
+	}
+
+	@media (min-width: 800px) {
+		margin-left: 85px;
+		width: calc(100% - 85px);
+	}
+
+	@media (min-width: 1000px) {
+		
+	}
+
+	@media (min-width: 1250px) {
+		float: none;
+		width: 1058px;
+		margin: 0 auto;
+	}
+
 }
 
 .inner-1-main {
@@ -123,23 +150,34 @@
 
 	@media (min-width: 600px) {
 		float: left;
-		margin-left: 40px;
-		width: calc(100% - 40px - 8px - 240px);
+		// margin-left: 40px;
+		width: calc(100% - 8px - 240px);
 		padding: 0 20px 24px;
 	}
 
 	@media (min-width: 800px) {
-		margin-left: 85px;
+		// margin-left: 85px;
 		// width: calc(100% - 85px - 8px - 380px);
-		width: calc(100% - 85px - 8px - 330px);
+		width: calc(100% - 8px - 330px);
 		padding: 0 40px 24px;
 	}
 
 	@media (min-width: 1000px) {
 		// width: calc(100% - 85px - 8px - 490px);
-		width: calc(100% - 85px - 8px - 490px);
+		width: calc(100% - 8px - 490px);
 		padding: 0 60px 24px;
 	}
+}
+
+.inner-content-link {
+	color: #4b2d83;
+	text-decoration: none;
+	border-bottom: 1px solid #ccc;
+
+	&:hover {
+		color: #a93c96;
+		// border-bottom: 1px solid #a93c96;
+	}	
 }
 
 .inner-image-container {
@@ -151,7 +189,7 @@
 	// box-sizing: border-box;
 	width: calc(100% / 3 - 12px);
 	float: left;
-	
+
 	&:not(:last-child) {
 		padding-right: 18px;
 	}
@@ -176,7 +214,7 @@
 	}
 
 	li {
-		font-size: 14px;
+		font-size: 0.875rem;
 	}
 }
 
@@ -192,7 +230,7 @@
 	}
 
 	@media (min-width: 800px) {
-		padding: 24px 30px;	
+		padding: 24px 30px;
 	}
 
 	@media (min-width: 1000px) {
@@ -212,20 +250,20 @@
 
 	&:hover {
 		color: #a93c96;
-		// border-bottom: 1px solid #a93c96;	
+		// border-bottom: 1px solid #a93c96;
 	}
 }
 
 .inner-1-info {
 	background: #000;
 	padding: 24px 10px;
-	
+
 	h1, h2, h3, h4, h5, h6, p {
 		color: #fff;
 	}
-	
+
 	p {
-		font-size: 14px;
+		font-size: 0.875rem;
 	}
 
 	@media (min-width: 600px) {
@@ -233,7 +271,7 @@
 	}
 
 	@media (min-width: 800px) {
-		padding: 24px 30px;	
+		padding: 24px 30px;
 	}
 
 	@media (min-width: 1000px) {
@@ -243,11 +281,11 @@
 }
 
 .inner-info-link {
-	color: #ccc;
+	color: #b7a57a;
 	text-decoration: none;
 	border-bottom: 1px solid #ccc;
 
 	&:hover {
-		color: #a93c96;		
+		color: #a93c96;
 	}
 }
