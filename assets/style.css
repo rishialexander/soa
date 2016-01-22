@@ -52,6 +52,24 @@ body {
     .uw-logo {
       left: 75px; } }
 
+.login-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.81rem;
+  position: absolute;
+  right: 38px;
+  top: 24%; }
+  .login-links li {
+    display: inline;
+    font-weight: bold;
+    color: #4b2d83; }
+  .login-links li > a {
+    text-decoration: none;
+    color: #4b2d83; }
+    .login-links li > a:hover {
+      text-decoration: underline; }
+
 .uw-links {
   list-style-type: none;
   margin: 0;
@@ -59,7 +77,7 @@ body {
   font-size: 0.81rem;
   position: absolute;
   right: 38px;
-  top: 36%; }
+  top: 54%; }
   .uw-links li {
     display: inline;
     color: #666; }
@@ -113,7 +131,7 @@ body {
 
 .soa-menu-1 {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.13rem;
   padding: 0 0 0; }
 
 .soa-menu-2 {
@@ -126,7 +144,7 @@ body {
       font-size: 0.88rem;
       position: absolute;
       background-color: #fff;
-      padding: 8px 20px 8px 0; } }
+      padding: 8px 15px 8px 0; } }
 
 .soa-menu-3 {
   font-weight: normal;
@@ -143,7 +161,7 @@ body {
     .soa-menu-1-section {
       float: left;
       border-top: none;
-      margin-right: 25px; }
+      margin-right: 26px; }
       .soa-menu-1-section:hover {
         background-color: #fff; }
         .soa-menu-1-section:hover .soa-menu-1-item::after {
@@ -168,6 +186,8 @@ body {
   .soa-menu-1-item::after {
     content: ' +';
     color: #4b2d83; }
+  .soa-menu-1-item:hover {
+    color: #a93c96; }
   @media (min-width: 800px) {
     .soa-menu-1-item {
       padding: 8px 12px;
@@ -272,12 +292,17 @@ body {
 .feature-link {
   font-size: 0.94rem;
   font-weight: bold;
-  color: #4b2d83;
-  text-decoration: none;
-  border-bottom: 1px solid #ccc;
+  color: #ccc;
+  text-decoration: underline;
   display: inline-block;
   margin: 8px 0 4px; }
   .feature-link:hover {
+    color: #ccc; }
+
+.feature-link-underline {
+  text-decoration: none;
+  color: #4b2d83; }
+  .feature-link-underline:hover {
     color: #a93c96; }
 
 .feature-description {
@@ -486,7 +511,7 @@ body {
 .inner-info-link {
   color: #b7a57a;
   text-decoration: none;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #666; }
   .inner-info-link:hover {
     color: #a93c96; }
 

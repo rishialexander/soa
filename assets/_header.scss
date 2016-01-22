@@ -23,6 +23,31 @@
 	}
 }
 
+.login-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0.81rem;
+	position: absolute;
+	right: 38px;
+	top: 24%;
+
+	li {
+		display: inline;
+		font-weight: bold;
+		color: #4b2d83;
+	}
+
+	li > a {
+		text-decoration: none;
+		color: #4b2d83;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 .uw-links {
 	list-style-type: none;
 	margin: 0;
@@ -30,7 +55,7 @@
 	font-size: 0.81rem;
 	position: absolute;
 	right: 38px;
-	top: 36%;
+	top: 54%;
 
 	li {
 		display: inline;

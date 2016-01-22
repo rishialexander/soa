@@ -35,7 +35,7 @@
 
 .soa-menu-1 {
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: 1.13rem;
 	padding: 0 0 0;
 }
 
@@ -49,7 +49,7 @@
 		font-size: 0.88rem;
 		position: absolute;
 		background-color: #fff;
-		padding: 8px 20px 8px 0;
+		padding: 8px 15px 8px 0;
 	}
 }
 
@@ -74,7 +74,7 @@
 	@media (min-width: 800px) {
 		float: left;
 		border-top: none;
-		margin-right: 25px;
+		margin-right: 26px;
 
 		&:hover {
 			background-color: #fff;
@@ -115,6 +115,10 @@
 	&::after {
 		content: ' +';
 		color: #4b2d83;
+	}
+
+	&:hover {
+		color: #a93c96;
 	}
 
 	@media (min-width: 800px) {
