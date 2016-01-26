@@ -20,10 +20,12 @@
 .soa-logo {
 	width: 110px;
 	position: absolute;
-	top: 102px;
+	// top: 102px;
+	top: 112px;
 	left: $margin-mobile;
 
 	@media (min-width: 600px) {
+		top: 102px;
 		width: 125px;
 		left: $margin-tablet;
 	}

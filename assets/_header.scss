@@ -23,18 +23,37 @@
 	}
 }
 
+.login-links-container {
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	background: #f1f1f1;
+
+	@media (min-width: 600px) {
+		top: 0;
+		background: transparent;
+		height: 50px;
+	}
+
+	@media (min-width: 800px) {
+		height: 60px;
+	}
+
+}
+
 .login-links {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	font-size: 0.81rem;
 	position: absolute;
-	right: 38px;
-	top: 24%;
+	left: 9px;
+	top: 33%;
+	font-weight: normal;
 
 	li {
 		display: inline;
-		font-weight: bold;
 		color: #4b2d83;
 	}
 
@@ -45,6 +64,23 @@
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+
+	@media (min-width: 600px) {
+		left: auto;
+		right: 60px;
+		top: 33%;
+	}
+
+	@media (min-width: 800px) {
+		right: 38px;
+		top: 38%;
+		font-weight: bold;
+	}
+
+	@media (min-width: 961px) {
+		right: 38px;
+		top: 24%;
 	}
 }
 
@@ -77,14 +113,25 @@
 }
 
 .hamburger-button {
-	width: 50px;
-	height: 50px;
+	width: 44px;
+	height: 40px;
 	position: absolute;
 	right: 0;
+	top: 50px;
 	background-image: url('images/hamburger.png');
-	background-position: 14px 14px;
+	// background-position: 14px 14px;
+	// background-size: 22px 22px;
+	background-position: 11px 9px;
 	background-size: 22px 22px;
 	background-repeat: no-repeat;
+
+	@media (min-width: 600px) {
+		top: 0;
+		width: 50px;
+		height: 50px;
+		background-position: 14px 14px;
+		background-size: 22px 22px;
+	}
 
 	@media (min-width: 800px) {
 		display: none;

@@ -8,9 +8,11 @@
 	position: absolute;
 	width: 100%;
 	z-index: 3;
+	top: 90px;
 
 	@media (min-width: 600px)  {
 		right: 0;
+		top: 50px;
 		width: 300px;
 	}
 
