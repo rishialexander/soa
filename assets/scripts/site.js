@@ -6,6 +6,8 @@ $( document ).ready(function() {
 	//Also toggles the hamburger button icon
 	$( '.hamburger-button' ).click(function(){
 		if ( $( '.soa-menu' ).is( ':hidden' ) ) {
+			$( '.soa-menu-1-item-expanded' ).siblings( '.soa-menu-2' ).slideUp(0);
+			$( '.soa-menu-1-item').removeClass( 'soa-menu-1-item-expanded' );
 			$( '.soa-menu' ).slideDown(150);
 			$(this).addClass( 'hamburger-button-x' );
 		} else {

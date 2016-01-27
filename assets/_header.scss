@@ -50,7 +50,7 @@
 	font-size: 0.81rem;
 	position: absolute;
 	left: 9px;
-	top: 33%;
+	top: 13px;
 	font-weight: normal;
 
 	li {
@@ -70,18 +70,18 @@
 	@media (min-width: 600px) {
 		left: auto;
 		right: 60px;
-		top: 33%;
+		top: 16px;
 	}
 
 	@media (min-width: 800px) {
 		right: 38px;
-		top: 38%;
+		top: 22px;
 		font-weight: bold;
 	}
 
 	@media (min-width: 961px) {
 		right: 38px;
-		top: 24%;
+		top: 14px;
 	}
 }
 
@@ -92,7 +92,7 @@
 	font-size: 0.81rem;
 	position: absolute;
 	right: 38px;
-	top: 54%;
+	top: 32px;
 
 	li {
 		display: inline;
