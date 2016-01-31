@@ -88,7 +88,7 @@ body {
   @media (min-width: 600px) {
     .login-links {
       left: auto;
-      right: 60px;
+      right: 108px;
       top: 16px; } }
   @media (min-width: 800px) {
     .login-links {
@@ -143,6 +143,28 @@ body {
 
 .hamburger-button-x {
   background-image: url("images/hamburger-x.png"); }
+
+.search-button {
+  width: 44px;
+  height: 40px;
+  position: absolute;
+  right: 44px;
+  top: 50px;
+  background-image: url("images/search.png");
+  background-position: 11px 9px;
+  background-size: 22px 22px;
+  background-repeat: no-repeat; }
+  @media (min-width: 600px) {
+    .search-button {
+      top: 0;
+      right: 50px;
+      width: 50px;
+      height: 50px;
+      background-position: 14px 14px;
+      background-size: 22px 22px; } }
+  @media (min-width: 800px) {
+    .search-button {
+      display: none; } }
 
 .soa-menu {
   background-color: #fff;
@@ -401,13 +423,17 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  line-height: 2; }
+  line-height: 1.5; }
   @media (min-width: 800px) {
     .inner ul {
-      line-height: 1.6;
+      line-height: 1.4;
       margin-bottom: 12px; } }
 .inner li {
-  font-size: 1rem; }
+  font-size: 1rem;
+  padding-bottom: 7px; }
+  @media (min-width: 800px) {
+    .inner li {
+      padding-bottom: 4px; } }
 
 .inner-breadcrumbs {
   border-bottom: 1px solid #ddd;
@@ -533,7 +559,7 @@ body {
     color: #a93c96; }
 
 ul.inner-nav-second-level {
-  margin: 0 0 0 22px; }
+  margin: 6px 0 0 22px; }
 
 .inner-nav-second-link {
   color: #4b2d83;
@@ -567,7 +593,7 @@ ul.inner-nav-second-level {
       padding: 24px 40px; } }
 
 .inner-info-link {
-  color: #b7a57a;
+  color: #e8e3d3;
   text-decoration: none;
   border-bottom: 1px solid #666; }
   .inner-info-link:hover {
@@ -576,8 +602,8 @@ ul.inner-nav-second-level {
 .footer {
   background-color: #333;
   color: #ccc;
-  font-size: 0.78rem;
-  line-height: 18px;
+  font-size: 0.85rem;
+  line-height: 20px;
   padding: 40px 10px 40px;
   clear: both; }
   .footer a {

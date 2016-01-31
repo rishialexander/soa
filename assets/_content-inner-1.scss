@@ -65,16 +65,21 @@
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
-		line-height: 2;
+		line-height: 1.5;
 
 		@media (min-width: 800px) {
-			line-height: 1.6;
+			line-height: 1.4;
 			margin-bottom: 12px;
 		}
 	}
 
 	li {
 		font-size: 1rem;
+		padding-bottom: 7px;
+
+		@media (min-width: 800px) {
+			padding-bottom: 4px;
+		}
 	}
 }
 
@@ -255,7 +260,7 @@
 }
 
 ul.inner-nav-second-level {
-	margin: 0 0 0 22px;
+	margin: 6px 0 0 22px;
 }
 
 .inner-nav-second-link {
@@ -307,7 +312,7 @@ ul.inner-nav-second-level {
 }
 
 .inner-info-link {
-	color: #b7a57a;
+	color: #e8e3d3;
 	text-decoration: none;
 	border-bottom: 1px solid #666;
 
